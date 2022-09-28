@@ -72,20 +72,42 @@ Scripting
 -->
 
 <!--
+    Basic structure is as follows:
+    the starting portion (<head>, for example) dictates type, which can then be modified.
+    modifications happen IN the tag, such as hyperlinks and images
+    Text can be modified as well, such as style:color
+    <!DOCTYPE html> - defines the type as html
+    <html>
+        <head> - sets information in the header, such as title
+
+        </head> - end most stuff with a </example>
+        <body> - sets information in the body of the website
+            Examples in body:
+            <h#> headings
+            <p> paragraphs
+            <a href = "link"> text </> add hyperlinks
+            <img src = "imagename.type"> images
+        </body>
+    </html> - always close out the website tag
+-->
+
+<!--
     Base code
 -->
 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My First Website</title>
+        <title img src="Website Image.jpg">My first title</title>
     </head>
     <body>
 
-        <h1>My First Heading</h1>
+        <h1 style="color:cyan">My First Heading</h1>
 
         <p>My first paragraph.</p>
-        <!-- the link will be shown as the text box -->
+
+        <h2>My Second Heading</h2>
+        <!-- the link will be shown as the text box (in white)-->
         <a href="https://www.w3schools.com/html/html_basic.asp">First Link</a>
         <!-- 
             src is the image to use, alt sets alternative text, size, and width.
