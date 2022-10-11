@@ -1,0 +1,38 @@
+Boland Unfug
+October 11th 2022
+
+
+    To Do list:
+    dotted lines, but not just the table lines - done
+    color scheme:
+    dark grey, light grey, white text and dotted lines, blue or purple?
+    I pretty much just want this format:
+    text | text
+    -----------
+    text | text
+    -----------
+    text | text
+    -----------
+    text | text
+    figure out how to make it work for mobile/small monitor through the text moving underneath under certain screen width.
+    Use table to split the site in half X use div instead
+    currently it resizes, which is not too bad but will become a problem with more content
+    icon top middle?
+    eventually split css from the html and use link - done
+    favicon
+    update information, really make sure it is as correct as possible
+    align top middle instead of just middle
+    lots and lots of formatting, come up with a text style and color scheme & learn how to apply it to the whole page
+ No Longer using tables
+    figure out how to set up custom table names for the CSS X
+    add table headers for the head sections X
+    custom dashes for the table X
+
+    Do I want to get the text in and then go bottom up or top down?
+
+
+Round 2:
+
+    swap for div instead of tables, easier to use for layout - Done
+    Set up styles in the CSS file
+    How to let div box line up next to each other

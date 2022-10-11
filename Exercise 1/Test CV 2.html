@@ -3,6 +3,14 @@
     dotted lines, but not just the table lines
     color scheme:
     dark grey, light grey, white text and dotted lines, blue or purple?
+    I pretty much just want this format:
+    text | text
+    -----------
+    text | text
+    -----------
+    text | text
+    -----------
+    text | text
     figure out how to make it work for mobile/small monitor through the text moving underneath under certain screen width.
     Use table to split the site in half
     currently it resizes, which is not too bad but will become a problem with more content
@@ -17,6 +25,8 @@
     add table headers for the head sections
     custom dashes for the table
     Do I want to get the text in and then go bottom up or top down?
+
+    swap for div instead of tables, easier to use for layout
 -->
 
 <!DOCTYPE html>
@@ -31,11 +41,24 @@
         body {
             background-color:rgb(50, 50, 50);
         }
+
+        .tableborder {
+            border: 1px solid black;
+            border-collapse:separate;
+            border-style:dotted;
+        }
         table {
             width:100%;
             border: 1px solid black;
-            border-collapse: collapse;
-            border-style: hidden;
+            border-collapse:separate;
+            border-style:hidden;
+        }
+        tr {
+            width:50%;
+            border:1px solid black;
+            border-style:dashed;
+            border-collapse:separate;
+            text-align:center;
         }
         td{
             width:50%;
@@ -52,16 +75,21 @@
         <table>
             <tr>
                 <td>
-                    I am a computer programmer in Ridgway, Colorado with a wide variety of interests and a passion for learning.
-                    I am most fluent with Java, Python, and C++, and enjoy mastering new languages.
-                    I am currently learning at New College of Florida, and have 4 years of programming experience.
-                    I have also worked for Coding with Kids, a summer programming camp, as a teacher, growing my communication skills alongside valuable work experience.
-                    You can check out my latest educational endeavors in the Projects tab.
-                    talk about travel since I do that a lot, talk about summer villages
-                    
+                    <table>
+                        <tr>
+                            <td>
+                                I am a computer programmer in Ridgway, Colorado with a wide variety of interests and a passion for learning.
+                                I am most fluent with Java, Python, and C++, and enjoy mastering new languages.
+                                I am currently learning at New College of Florida, and have 4 years of programming experience.
+                                I have also worked for Coding with Kids, a summer programming camp, as a teacher, growing my communication skills alongside valuable work experience.
+                                You can check out my latest educational endeavors in the Projects tab.
+                                talk about travel since I do that a lot, talk about summer villages
+                            </td>
+                        </tr>
+                    </table>
                 </td>
                 <td>
-                    <table> <!-- nested table to fit multiple elements -->
+                    <table>
                         <tr>
                             <td>
                                 Boland Unfug <br>
@@ -79,19 +107,30 @@
             </tr>
             <tr>
                 <td>
-                    Certificates and qualifications
-                    certificate of completion video game design course colorado school of mines
+                    <table>
+                        <tr>
+                            <td>
+                                Certificates and qualifications
+                                certificate of completion video game design course colorado school of mines
+                            </td>
+                        </tr>
+                    </table>
                 </td>
                 <td>
-                    skills:
-                    Curiosity, Planning, Communication <br>
-                    make this like pie charts or icons <br>
-                    also add 1 flaw
+                    <table>
+                        <tr>
+                            <td>
+                                skills:
+                                Curiosity, Planning, Communication <br>
+                                make this like pie charts or icons <br>
+                                also add 1 flaw
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
             <tr>
                 <td>
-                    work experience
                     <table>
                         <tr>
                             <td>
@@ -117,20 +156,25 @@
                                 <h5>I organized and ran weekly activities and helped oversee friday game night.</h5>
                             </td>
                     </table>
-                </td> <!-- end of work experience -->
+                </td>
                 <td>
-                    projects <br>
-                    link github here <br>
-                    <a href="https://github.com/BolandUnfug" style="color:white"> Personal Projects </a>
-                    <br>
-                    <a href="https://github.com/Boland-Unfug" style="color:white">Educational Projects?</a>
-                    <br>
-                    also add some images of previous projects just to fill space
+                    <table>
+                        <tr>
+                            <td>
+                                projects <br>
+                                link github here <br>
+                                <a href="https://github.com/BolandUnfug" style="color:white"> Personal Projects </a>
+                                <br>
+                                <a href="https://github.com/Boland-Unfug" style="color:white">Educational Projects?</a>
+                                <br>
+                                also add some images of previous projects just to fill space
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
             <tr>
                 <td>
-                    Education
                     <table>
                         <tr>
                             <td>
@@ -157,10 +201,8 @@
                             </td>
                         </tr>
                     </table>
-                    
                 </td>
                 <td>
-                    <h1>Classes</h1>
                     <table>
                         <tr>
                             <td>
@@ -212,7 +254,6 @@
                     </table>
                 </td>
             </tr>
-
         </table>
     </body>
 
