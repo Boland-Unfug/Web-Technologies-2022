@@ -1,21 +1,75 @@
-/* general styling */
+
+/* universal styling */
+* {
+    box-sizing: border-box;
+}
+
 body {
     color:white;
     background-color: rgb(35,35,35);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.box {
-    background-color: rgb(50,50,50);
-    border:2px solid white;
-    padding:15px;
-}
+.flexed {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+  }
 
-/* link styling */
+/* column styling, built phone first */
+[class*="column-"] {
+    float: left;
+    padding: 10px;
+    padding: auto;
+    border: 1px solid white;
+    size:100%;
+  }
+/* to be honest I don't know what after does but it works */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    width:100%;
+  }
 
-.link {
-    width:200px;
+@media only screen and (min-width: 800px) {
+/* a column approach, breaking the webpage into 12 columns. */
+    .column-1 {width: 8.33%;}
+    .column-2 {width: 16.66%;}
+    .column-3 {width: 25%;}
+    .column-4 {width: 33.33%;}
+    .column-5 {width: 41.66%;}
+    .column-6 {width: 50%;}
+    .column-7 {width: 58.33%;}
+    .column-8 {width: 66.66%;}
+    .column-9 {width: 75%;}
+    .column-10 {width: 83.33%;}
+    .column-11 {width: 91.66%;}
+    .column-12 {width: 100%;}
+
+  }
+
+
+  /* link styling */
+
+  .flexlinks {
+    display:flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: 800px) {
+    .flexlinks {
+      flex-direction: column;
+    }
 }
-a:link, a:visited{
+  a {
+    padding:10px;
+    border: 2px solid white;
+    float:right;
+  }
+
+  a:link, a:visited{
     color:white;
 }
 
@@ -23,3 +77,24 @@ a:hover{
     color:black;
     background-color: white;
 }
+
+/* job box styling */
+
+.box {
+    background-color: rgb(55,55,55);
+    padding:10px;
+    size:50%;
+    border: 1px solid white;
+}
+
+.date {
+    font-size: 1em;    
+    }
+    
+    .title {
+    font-size:2.25em;
+    }
+    
+    .description {
+    font-size: 1.5em;
+    }

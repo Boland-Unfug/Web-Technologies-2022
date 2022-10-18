@@ -54,3 +54,8 @@ Round 2:
     make a style for link boxes
     responsive text/organization resizing
     how to make links line up vertically
+
+    Use sectioning tags
+    use grid for job and education
+    figure out how to divide screen effectively
+    next time I have a model that I like I will fork the project for editing
