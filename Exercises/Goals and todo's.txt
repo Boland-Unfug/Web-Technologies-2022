@@ -30,9 +30,27 @@ October 11th 2022
 
     Do I want to get the text in and then go bottom up or top down?
 
-
 Round 2:
 
     swap for div instead of tables, easier to use for layout - Done
     Set up styles in the CSS file
     How to let div box line up next to each other
+    Add Extra Curricular & hobbies
+
+    Slight New Idea:
+
+    link    Page 1
+    link    Page 2
+    link    Page 3
+    link    Page 4
+
+    Every page has a concept, letting me make the formatting much more modular
+    still be able to scroll, but there would probably be some more blank space. some sort of transition,
+    so you see the whole pages content at once.
+    metadata
+    viewport
+    dark vs light mode?
+    make a style for job boxes (date, title, description) and also for education
+    make a style for link boxes
+    responsive text/organization resizing
+    how to make links line up vertically

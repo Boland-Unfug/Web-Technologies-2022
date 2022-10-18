@@ -1,0 +1,25 @@
+/* general styling */
+body {
+    color:white;
+    background-color: rgb(35,35,35);
+}
+
+.box {
+    background-color: rgb(50,50,50);
+    border:2px solid white;
+    padding:15px;
+}
+
+/* link styling */
+
+.link {
+    width:200px;
+}
+a:link, a:visited{
+    color:white;
+}
+
+a:hover{
+    color:black;
+    background-color: white;
+}
