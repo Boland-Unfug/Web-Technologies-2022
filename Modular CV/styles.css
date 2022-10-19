@@ -56,6 +56,7 @@ body {
   .flexlinks {
     display:flex;
     flex-direction: row;
+    text-decoration: none;
   }
 
   @media (min-width: 800px) {
@@ -67,6 +68,7 @@ body {
     padding:10px;
     border: 2px solid white;
     float:right;
+    text-decoration: none;
   }
 
   a:link, a:visited{
@@ -76,6 +78,7 @@ body {
 a:hover{
     color:black;
     background-color: white;
+
 }
 
 /* job box styling */
@@ -97,4 +100,12 @@ a:hover{
     
     .description {
     font-size: 1.5em;
+    }
+
+    /* image styling */
+
+    img {
+      width: 50%;
+      height: 100%;
+      object-fit:scale-down;
     }
