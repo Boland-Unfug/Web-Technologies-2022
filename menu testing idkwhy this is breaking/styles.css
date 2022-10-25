@@ -1,0 +1,28 @@
+body{
+    background-color:rgb(50,50,50);
+    margin:0px;
+}
+
+*{
+    background-color:aqua;
+}
+
+#menu {
+    height: 1000vh;
+    display:flex;
+    align-items: center;
+  }
+
+  .menu-item {
+    color:white;
+    font-size: clamp(3rem,8vw,8rem);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display:block;
+    text-decoration: none;
+    padding:clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  }
+
+  #menu-items{
+    margin-left:clamp(4rem,20vw,48rem);
+  }
+

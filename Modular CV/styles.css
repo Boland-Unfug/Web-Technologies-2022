@@ -56,7 +56,7 @@ body {
   }
 
 
-  /* link styling */
+  /* link styling 
 
   .flexlinks {
     display:flex;
@@ -69,7 +69,7 @@ body {
       flex-direction: column;
     }
 }
-  a {
+  .sidebar {
     padding:1em;
     margin: .5em;
     border: 2px solid white;
@@ -77,15 +77,16 @@ body {
     text-decoration: none;
   }
 
-  a:link, a:visited{
+  .sidebar:link, .sidebar:visited{
     color:white;
 }
 
-a:hover{
+.sidebar:hover{
     color:black;
     background-color: white;
 
 }
+*/
 
 /* job box styling */
 
