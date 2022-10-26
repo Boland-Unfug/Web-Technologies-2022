@@ -48,16 +48,27 @@ Round 2:
     still be able to scroll, but there would probably be some more blank space. some sort of transition,
     so you see the whole pages content at once.
     metadata
-    viewport
+    viewport - Done
     dark vs light mode?
-    make a style for job boxes (date, title, description) and also for education
-    make a style for link boxes
-    responsive text/organization resizing
-    how to make links line up vertically
+    make a style for job boxes (date, title, description) and also for education - Done
+    make a style for link boxes - Done
+    responsive text/organization resizing - Done
+    how to make links line up vertically - Done
 
     Use sectioning tags
     use grid for job and education - Done
     figure out how to divide screen effectively - Done
     next time I have a model that I like I will fork the project for editing - Done
-    Work on description
-    update links
+    Work on description - Done
+    update links - Done
+
+    Create a more dynamic linking system
+    choose a font and general style
+    increase font sizes for easy readability
+    add animations
+    redesign flex boxes and columns for easier styling
+    should I create rows in the same way I set up columns?
+    haha yes the solution is to use id's for the navigation box
+
+
+
