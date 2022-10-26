@@ -1,0 +1,51 @@
+/*
+Boland Unfug
+October 26th 2022
+A way to test flex boxes and containers.
+*/
+
+/* universal styling */
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(60,60,60);
+    color:white;
+}
+
+.row{
+ width:100%;
+ display:flex;
+}
+
+[class*="column-"] {
+    float: left;
+    padding: 10px;
+    padding: auto;
+    border: 1px solid white;
+    size:100%;
+}
+
+@media only screen and (min-width: 800px) {
+    /* a column approach, breaking the webpage into 12 columns. */
+        .column-1 {width: 8.33%;}
+        .column-2 {width: 16.66%;}
+        .column-3 {width: 25%;}
+        .column-4 {width: 33.33%;}
+        .column-5 {width: 41.66%;}
+        .column-6 {width: 50%;}
+        .column-7 {width: 58.33%;}
+        .column-8 {width: 66.66%;}
+        .column-9 {width: 75%;}
+        .column-10 {width: 83.33%;}
+        .column-11 {width: 91.66%;}
+        .column-12 {width: 100%;}
+    
+      }
+    
+#test-box {
+    background-color: darkslategray;
+    width:20vw;
+    height:20vh;
+}
