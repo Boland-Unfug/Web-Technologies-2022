@@ -68,7 +68,8 @@ Round 2:
     add animations
     redesign flex boxes and columns for easier styling
     should I create rows in the same way I set up columns?
-    haha yes the solution is to use id's for the navigation box
+    haha yes the solution is to use id's for the navigation box?
+    create icons for mobile navigation bar
 
 
 

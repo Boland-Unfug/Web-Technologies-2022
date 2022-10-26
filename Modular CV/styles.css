@@ -1,6 +1,6 @@
 /* @Boland Unfug
 October 12 2022
-Version 6
+Version 8
 The styling for all pages on the cv website.
 */
 
@@ -15,98 +15,65 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.flexed {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-  }
+.row{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+}
 
+@media only screen and (min-width: 800px) {
+  .row{
+    width:100%;
+    display:flex;
+    flex-wrap:nowrap;
+  }
+}
 /* column styling, built phone first */
 [class*="column-"] {
-    float: left;
-    padding: 10px;
-    padding: auto;
+    float:left;
     border: 1px solid white;
     size:100%;
-  }
-/* to be honest I don't know what after does but it works */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-    width:100%;
   }
 
 @media only screen and (min-width: 800px) {
 /* a column approach, breaking the webpage into 12 columns. */
-    .column-1 {width: 8.33%;}
-    .column-2 {width: 16.66%;}
-    .column-3 {width: 25%;}
-    .column-4 {width: 33.33%;}
-    .column-5 {width: 41.66%;}
-    .column-6 {width: 50%;}
-    .column-7 {width: 58.33%;}
-    .column-8 {width: 66.66%;}
-    .column-9 {width: 75%;}
-    .column-10 {width: 83.33%;}
-    .column-11 {width: 91.66%;}
-    .column-12 {width: 100%;}
-
+    .column-1 {width: 8.33vw;}
+    .column-2 {width: 16.66vw;}
+    .column-3 {width: 25vw;}
+    .column-4 {width: 33.33vw;}
+    .column-5 {width: 41.66vw;}
+    .column-6 {width: 50vw;}
+    .column-7 {width: 58.33vw;}
+    .column-8 {width: 66.66vw;}
+    .column-9 {width: 75vw;}
+    .column-10 {width: 83.33vw;}
+    .column-11 {width: 91.66vw;}
+    .column-12 {width: 100vw;}
   }
 
 
   /* link styling 
 
-  .flexlinks {
-    display:flex;
-    flex-direction: row;
-    text-decoration: none;
-  }
-
-  @media only screen and (min-width: 800px) {
-    .flexlinks {
-      flex-direction: column;
-    }
-}
-  .sidebar {
-    padding:1em;
-    margin: .5em;
-    border: 2px solid white;
-    float:right;
-    text-decoration: none;
-  }
-
-  .sidebar:link, .sidebar:visited{
-    color:white;
-}
-
-.sidebar:hover{
-    color:black;
-    background-color: white;
-
-}
-*/
-
 /* job box styling */
 
 .box {
     background-color: rgb(55,55,55);
-    margin:1em;
-    size:50%;
+    padding: 10px;
+    margin: 10px;
+    size:100%;
     border: 1px solid white;
 }
 
 .date {
-    font-size: 1em;    
+    font-size: small;    
     }
     
     .title {
-    font-size:2.25em;
+    font-size:large;
     }
     
     .description {
-    font-size: 1.5em;
+    font-size: medium;
     }
 
     /* image styling */
@@ -117,12 +84,25 @@ body {
       object-fit:cover;
     }
 
-    /*.split {
-      width:50%;
-    }*/
-
     @media only screen and (min-width: 800px) {
       .split{
-        width:50%;
+        width:49%;
       }
+    }
+
+    #menu {  
+      align-items: center;
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+    
+    #menu-items {
+      margin-left: clamp(4rem, 20vw, 48rem);
+      position: relative;
+      z-index: 2;
+    }
+
+    .navigation-item{
+
     }
