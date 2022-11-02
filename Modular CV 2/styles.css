@@ -1,0 +1,214 @@
+/*
+Boland Unfug
+November 1st 2022
+Here will be the styles and hopefully animations for my CV.
+Structure
+I will have a basic class for all content, which will flexibly store individual elements
+then, I will have an ID for each element, in order to divide up each kind of content and use links
+Seperately I will have a nav bar that does not scroll
+The content box sizes will be static, but change depending on the screen size, hopefully 
+animate link clicking and scrolling
+There should be an indicator for topic
+I will need to make both width and height dynamic, I currently have dynamic widths
+*/
+
+
+/* Universal Content */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+}
+
+div {
+    /*to be used for font style*/
+    color: white;
+}
+
+img {
+    size: 100%;
+    object-fit:cover;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Universal content styles and organization */
+.content {
+    background-color: aquamarine;
+}
+
+.box {
+    display: flex;
+    margin: 2.5% 5%;
+    background-color: lightslategray;
+}
+
+.item {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: black;
+    margin: 2.5% 5%;
+}
+
+.date {
+    font-size: small;
+}
+
+.title {
+    font-size: large;
+}
+
+.description {
+    font-size: medium;
+}
+
+@media only screen and (min-width: 801px) {
+
+    /* currently being set for mobile and pc, will add tablet later */
+    .content {
+        width: 80vw;
+        height: 600vh;
+        margin-left: 20vw;
+    }
+
+    .box {
+        width: 90%;
+        /* width of the content container, not whole page */
+        height: 90vh;
+        flex-flow: row wrap;
+    }
+
+    .item {
+        /* figure out how to make the gap between each box the same as between box and border */
+        width: 40%;
+        height: 40%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* currently being set for mobile and pc, will add tablet later */
+    .content {
+        width: 100vw;
+        height: 600vh;
+        margin-top: 20vh;
+    }
+
+    .box {
+        width: 90%;
+        /* width of the content container, not whole page */
+        height: 90vh;
+        flex-flow: column wrap;
+    }
+
+    .item {
+        /* figure out how to make the gap between each box the same as between box and border */
+        width: 90%;
+        height: 20%;
+    }
+
+}
+
+/* Unique Contents styles */
+#menu {}
+
+#description {}
+
+.experience {}
+
+#education {}
+
+#work {}
+
+#projects {}
+
+#skills {}
+
+#profilepic {
+    height:90%;
+    width:50%;
+    margin: 0 0 0 0;
+}
+
+
+/* Navigation Bar styles and organization */
+
+
+#navbar {
+    /*improve item spacing */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: mediumseagreen;
+}
+
+.links {
+    position: fixed;
+}
+
+.link {
+    transition: opacity 400ms ease;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.link:hover {
+    opacity: 0.3;
+}
+
+@media only screen and (min-width: 801px) {
+
+    /* currently being set for mobile and pc, will add tablet later */
+    #navbar {
+        align-items: center;
+    }
+
+    .links {
+        width: 20vw;
+        height: 100vh;
+    }
+
+    .link {
+        /* need to add changing font size, but for now these can be the same */
+        width: 15vw;
+        font-size: 3vw;
+    }
+
+    .link:hover {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        align-items: center;
+
+    }
+
+    .links {
+        width: 100vw;
+        height: 20vh;
+
+    }
+
+    .link {
+        /* need to add changing font size, but for now these can be the same */
+        width: 15vw;
+        font-size: 3vw;
+    }
+
+    .link:hover {
+        font-size: 3vw;
+    }
+}
+
+
+/* I will most likely need ID's for every link, in order for proper animations depending on page */

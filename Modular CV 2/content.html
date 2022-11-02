@@ -1,0 +1,136 @@
+<!--
+    Boland Unfug
+    November 1st 2022
+    I will be using this as my final option, where I have all the html elements in one file.
+    This is due to being able to use links to scroll to specific content
+    it also simplifies server side, and lets me make everything adjustable
+    This truly only works because a CV is very simplistic and mostly just conveys information.
+-->
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <title>
+        Boland Unfug CV
+    </title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="links" id="navbar">
+        <a href="#menu" class="link">Menu</a>
+        <a href="#description" class="link">Description</a>
+        <a href="#education" class="link">Education</a>
+        <a href="#work" class="link">Work</a>
+        <a href="#skills" class="link">Skills</a>
+        <a href="#projects" class="link">Projects</a>
+    </div>
+    <div class="content">
+        <div class="box" id="menu">
+            This should be a menu
+            print("Welcome")
+            System.out.println("Hello World!");
+            console.log("Welcome")
+            printf ("hello world")
+            <!--cout << "hello world" <<endl; won't work for now-->
+        </div>
+        <div class="box" id="discription">
+            <div class="item" id="profilepic">
+                <img src="images/me2.jpg" alt="me">
+            </div>
+            <div class="item">
+                I am a computer programmer in Ridgway, Colorado with a wide variety of interests and a passion for
+                learning.
+                I am most fluent with Java, Python, and C++, and enjoy mastering new languages.
+                I am currently learning at New College of Florida, and have 4 years of programming experience.
+                I have also worked for Coding with Kids, a summer programming camp, as a teacher, growing my
+                communication skills alongside valuable work experience.
+                You can check out my latest educational endeavors in the Projects tab.
+                talk about travel since I do that a lot, talk about summer villages
+            </div>
+        </div>
+        <div class="experience box" id="work">
+            <div class="item">
+                <div class="date">Summer 2022 - Present</div>
+                <div class="title">Ouray Hotsprings Lifeguard</div>
+                <div class="description"> I experienced the job being a lifeguard lol</div>
+            </div>
+            <div class="item">
+                <div class="date">Summer 2020 - Winter 2020</div>
+                <div class="title"> Coding with Kids Teacher</div>
+                <div class="description">
+                    I taught kids to program minecraft mods using java. I mostly taught kids 5th and up, and each camp
+                    is
+                    1 week long, 3 hours per day.</div>
+            </div>
+            <div class="item">
+                <div class="date">Summer 2018 - Summer 2019</div>
+                <div class="title">Minecraft Server CoHost</div>
+                <div class="description">
+                    Server Co-owner, Moderator, assistant developer and assistant builder for the Voxelverse Minecraft
+                    server.</div>
+            </div>
+            <div class="item">
+                <div class="date">June 2017 - June 2018</div>
+                <div class="title"> Denver Public Library Volunteer</div>
+                <div class="description">
+                    I organized and ran weekly activities and helped oversee friday game night.</div>
+            </div>
+            This should be work experience
+        </div>
+        <div class="experience box" id="education">
+            <div class="item">
+                <div class="date">2020 - Present</div>
+                <div class="title">New College of Florida</div>
+                <div class="description">This is the current school I am attending. They focus on concepts, problem
+                    solving, and teamwork instead of memorization.</div>
+            </div>
+            <div class="item">
+                <div class="date">2022 - Present</div>
+                <div class="title">London South Bank University</div>
+                <div class="description">This is the current school I am attending. I wanted to get more worldly
+                    knowledge, expand my horizons, and learn in new ways, so I decided to take a semester abroad.</div>
+            </div>
+            <div class="item">
+                <div class="date">2018 - 2020</div>
+                <div class="title">Community College of Denver</div>
+                <div class="description">I took several College classes during my junior and senior year of high school.
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">2017 - 2020</div>
+                <div class="title">CEC Early College</div>
+                <div class="description">I attended for 3 years, primarily taking video game design classes.</div>
+            </div>
+            This should be education experience
+        </div>
+        <div class="box" id="projects">
+            <div class="item">
+                Here are my latest projects:
+                <a href="https://github.com/BolandUnfug"> Personal Projects </a>
+            </div>
+            <div class="item">
+                Here are my old projects:
+                <a href="https://github.com/Boland-Unfug">Educational Projects?</a>
+            </div>
+
+        </div>
+        <div class="box" id="skills">
+            <div class="item">
+                <img class="split" src="images/hard skills.png" alt="hard skills">
+            </div>
+            <div class="item">
+                <img class="split" src="images/soft skills.png" alt="soft skills">
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

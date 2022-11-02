@@ -1,0 +1,29 @@
+<!--
+    testing ID vs CLASS
+    October 31st 2022
+    Boland Unfug
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Testing classes vs ID's</title>
+        <style>
+            .classthingie {
+                font-size: large;
+            }
+
+            #idthingie {
+                color:blue
+            }
+        </style>
+    </head>
+
+    <body>
+        <p class="classthingie">class only</p>
+        <p id="idthingie">ID only</p>
+        <p class="classthingie" id="idthingie">both. This should NOT be blue</p>
+        <h1 class="classthingie" id="idthingie">both. Ok the above was blue, maybe its tags?</p>
+    </body>
+</html>

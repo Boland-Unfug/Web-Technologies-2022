@@ -11,7 +11,7 @@ The styling for all pages on the cv website.
 
 body {
     color:white;
-    background-color: rgb(35,35,35);
+    background-color: rgb(20,20,20);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -31,7 +31,6 @@ body {
 /* column styling, built phone first */
 [class*="column-"] {
     float:left;
-    border: 1px solid white;
     size:100%;
   }
 
@@ -90,19 +89,33 @@ body {
       }
     }
 
+    /* Menu styling */
+
+    a {
+      text-decoration:none;
+    }
+
     #menu {  
-      align-items: center;
-      display: flex;
       height: 100vh;
-      width: 100vw;
+      align-items: center;
     }
     
     #menu-items {
-      margin-left: clamp(4rem, 20vw, 48rem);
-      position: relative;
-      z-index: 2;
+      color:white;
+      
     }
 
-    .navigation-item{
+    .menu-item{
+      color:white;
+      transition: opacity 400ms ease;
+      font-family: 'Ibarra Real Nova', serif;
+      font-size: clamp(2rem, 5vw, 5rem);
+    }
 
+    #menu-items:hover > .menu-item {
+      opacity: 0.3;
+    }
+    
+    #menu-items:hover > .menu-item:hover {
+      opacity: 1; 
     }
