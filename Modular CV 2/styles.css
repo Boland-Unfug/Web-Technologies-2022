@@ -31,7 +31,7 @@ div {
 
 img {
     size: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 a {
@@ -39,13 +39,16 @@ a {
     text-decoration: none;
 }
 
+
 /* Universal content styles and organization */
 .content {
     background-color: aquamarine;
+    height: 630vh;
 }
 
 .box {
     display: flex;
+    height:100vh;
     margin: 2.5% 5%;
     background-color: lightslategray;
 }
@@ -53,20 +56,21 @@ a {
 .item {
     display: flex;
     flex-flow: column nowrap;
+    font-size: large;
     background-color: black;
     margin: 2.5% 5%;
 }
 
 .date {
-    font-size: small;
+    font-size: medium;
 }
 
 .title {
-    font-size: large;
+    font-size: xx-large;
 }
 
 .description {
-    font-size: medium;
+    font-size: large;
 }
 
 @media only screen and (min-width: 801px) {
@@ -74,14 +78,12 @@ a {
     /* currently being set for mobile and pc, will add tablet later */
     .content {
         width: 80vw;
-        height: 600vh;
         margin-left: 20vw;
     }
 
     .box {
         width: 90%;
         /* width of the content container, not whole page */
-        height: 90vh;
         flex-flow: row wrap;
     }
 
@@ -89,6 +91,26 @@ a {
         /* figure out how to make the gap between each box the same as between box and border */
         width: 40%;
         height: 40%;
+    }
+
+    #description {
+        flex-direction:column;
+        flex-wrap:nowrap;
+    }
+
+    #profilepic {
+        height: 90%;
+        width: 50%;
+    }
+
+    #contactme {
+        height: 25%;
+        width: 40%;
+    }
+
+    #biodescription {
+        height: 55%;
+        width: 40%;
     }
 
 
@@ -100,15 +122,13 @@ a {
     /* currently being set for mobile and pc, will add tablet later */
     .content {
         width: 100vw;
-        height: 600vh;
         margin-top: 20vh;
     }
 
     .box {
         width: 90%;
         /* width of the content container, not whole page */
-        height: 90vh;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
     }
 
     .item {
@@ -117,12 +137,54 @@ a {
         height: 20%;
     }
 
+    #description {
+        flex-direction:row;
+    }
+
+    #profilepic {
+        height: 50%;
+        width: 60%;
+    }
+
+    #contactme {
+        height: 50%;
+        width: 30%;
+    }
+
+    #biodescription {
+        height: 40%;
+        width: 100%;
+    }
+
 }
 
 /* Unique Contents styles */
 #menu {}
 
-#description {}
+#helloworld {
+        font-size:5rem;
+}
+#description {
+    flex-wrap: wrap;
+}
+
+#profilepic {
+    margin:2.5%;
+}
+
+#contactme {
+    margin:2.5%;
+}
+
+#biodescription {
+    margin:2.5%;
+}
+
+#profilepic {}
+
+#contactme {}
+
+#biodescription {}
 
 .experience {}
 
@@ -133,13 +195,6 @@ a {
 #projects {}
 
 #skills {}
-
-#profilepic {
-    height:90%;
-    width:50%;
-    margin: 0 0 0 0;
-}
-
 
 /* Navigation Bar styles and organization */
 
