@@ -29,12 +29,12 @@ Phase 3: combine the two through a 'simplification' popup in the menu that chang
 
 
 proposed color scheme:
-a.) dark grey background, grey boxes, white text
-b.) grey background, dark grey boxes, white text
+light grey background, grey sections, dark grey boxes, white text
 
 find a place for certifications and awards - could be description or education or menu idk
 Check previous to do list and notebook for other ideas and tasks
-
+fun idea, use margins and padding to create a diffuse effect
+Add a header in each seciton
 CSS
     organize and try to make more concise
     ids
@@ -52,10 +52,10 @@ section coding todos:
             should displace other words
         add navigation arrow?
 
-    Menu
+    Menu 
 
-        Fix scrolling text moving over nav bar
-        add background
+        Fix scrolling text moving over nav bar - removed scrolling text
+        add background - prerequisite javascript 101
         fix text size
 
     Description
@@ -63,18 +63,19 @@ section coding todos:
         fix photo ratio
         make margins smaller
         write description
-        fix contact section in mobile mode
+        fix contact section in mobile mode - Done
 
     Skills
 
-        Improve photo ratios
+        Improve photo ratios - Done
         add a form for others to rate skills
-        add a box for direct strengths and weaknesses
+        add a box for direct strengths and weaknesses - Done
 
     Projects
 
         fix link icon sizes
-        add 2 projects in the form of gifs with a description
+        add 2 projects in the form of gifs with a description - boxes added
+        Make links open in new tab
 
     Work
 
@@ -87,4 +88,13 @@ section coding todos:
         Improve fonts and sizes
         improve descriptions
         add highlight classes
+
+javascript:
+    find a trigger that I can use to test the changing of sections - done
+    fix section finder - Done
+    Find a way to reset previously selected sections
+    Add a modifier so the screen decides on one when in between sections - Partially Done
+    add a condition for if window size changes, reset the baseline values
+    figure out how to not use global variables
+
 

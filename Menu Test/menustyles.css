@@ -162,3 +162,48 @@ body {
     color: white;
     font-family: "Rubik", sans-serif;
   }
+
+  .links {
+    position: fixed;
+}
+
+.link {
+    transition: opacity 400ms ease;
+    font-family: 'Ibarra Real Nova', serif;
+    
+}
+
+.link:hover {
+    opacity: 0.3;
+}
+
+
+#navbar {
+  /*improve item spacing */
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  background-color: rgb(60, 60, 60);
+}
+
+#menu {
+  font-size: 5vw;
+  align-items: center;
+  justify-content: center;
+}
+
+#education {}
+
+#work {}
+
+#projects {
+    font-size:25vw;
+}
+
+#skills {
+
+}
+
+#description {
+  flex-wrap: wrap;
+}

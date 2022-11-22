@@ -20,8 +20,10 @@ I will need to make both width and height dynamic, I currently have dynamic widt
 }
 
 body {
-    background-color: rgb(20, 20, 20);
+    border: white;
+    background-color: rgb(80, 80, 80);
     display: flex;
+    font-family: 'Ibarra Real Nova', serif;
 }
 
 div {
@@ -41,8 +43,9 @@ a {
 
 
 /* Universal content styles and organization */
-.content {
-    background-color: aquamarine;
+#content {
+    background-color: rgb(80, 80, 80);
+    /* border: 1px solid white; */
     height: 630vh;
 }
 
@@ -50,14 +53,16 @@ a {
     display: flex;
     height:100vh;
     margin: 2.5% 5%;
-    background-color: lightslategray;
+    /* border: 1px solid white; */
+    background-color: rgb(60, 60, 60);
 }
 
 .item {
     display: flex;
     flex-flow: column nowrap;
     font-size: large;
-    background-color: black;
+    /* border: 1px solid white; */
+    background-color: rgb(40, 40, 40);
     margin: 2.5% 5%;
 }
 
@@ -76,7 +81,7 @@ a {
 @media only screen and (min-width: 801px) {
 
     /* currently being set for mobile and pc, will add tablet later */
-    .content {
+    #content {
         width: 80vw;
         margin-left: 20vw;
     }
@@ -85,6 +90,9 @@ a {
         width: 90%;
         /* width of the content container, not whole page */
         flex-flow: row wrap;
+    }
+    .box.current {
+        background-color: red;
     }
 
     .item {
@@ -125,6 +133,22 @@ a {
         height:100%;
     }
 
+    #skills {
+        flex-direction: row;
+    }
+
+    #skillcharts {
+        flex-direction:column;
+        width:55%;
+        height:90%;
+    }
+    
+    #skilllists {
+        flex-direction: column;
+        width:20%;
+        height:90%;
+    }
+
 
 
 }
@@ -132,7 +156,7 @@ a {
 @media only screen and (max-width: 800px) {
 
     /* currently being set for mobile and pc, will add tablet later */
-    .content {
+    #content {
         width: 100vw;
         margin-top: 20vh;
     }
@@ -159,6 +183,7 @@ a {
     }
 
     #contactme {
+        flex-flow: column wrap;
         height: 50%;
         width: 30%;
     }
@@ -170,19 +195,40 @@ a {
 
     #basicinfo {
         width:100%;
-        height:80%;
+        height:60%;
     }
 
     #contacticons {
-        flex-direction: row;
+        flex-flow: row wrap;
         font-size: 7vw;
         width:100%;
+        height:20%;
+    }
+
+    #skills {
+        flex-direction: column;
+        margin:2.5%;
+    }
+
+    #skillcharts {
+        flex-direction:column;
+        width:90%;
+        height:75%;
+    }
+    
+    #skilllists {
+        flex-direction: row;
+        width:90%;
         height:20%;
     }
 }
 
 /* Unique Contents styles  organize these */
-#menu {}
+#menu {
+    font-size: 5vw;
+    align-items: center;
+    justify-content: center;
+}
 
 #helloworld {
         font-size:5rem;
@@ -205,16 +251,14 @@ a {
     flex-direction: row;
 }
 
-
 #contacticons {
     text-align: center;
-    background-color: red;
     font-size: 7vh;
 }
 #basicinfo {
-    background-color: blue;
     font-size:200%;
 }
+
 .experience {}
 
 #education {}
@@ -222,10 +266,20 @@ a {
 #work {}
 
 #projects {
-    font-size:25vw;
+
 }
 
-#skills {}
+#skills {
+
+}
+
+.skillcharts {
+
+}
+
+.skilllists {
+    font-size: xx-large;
+}
 
 /* Navigation Bar styles and organization */
 
@@ -234,21 +288,29 @@ a {
     /*improve item spacing */
     display: flex;
     flex-wrap: wrap;
-    background-color: mediumseagreen;
+    /* border: 1px solid white; */
+    background-color: rgb(60, 60, 60);
 }
 
 .links {
     position: fixed;
 }
 
+
 .link {
     transition: opacity 400ms ease;
     font-family: 'Ibarra Real Nova', serif;
+    
+}
+
+.link.current {
+    color:red;
 }
 
 .link:hover {
     opacity: 0.3;
 }
+
 
 @media only screen and (min-width: 801px) {
 
