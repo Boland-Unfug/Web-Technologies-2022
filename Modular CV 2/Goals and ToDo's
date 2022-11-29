@@ -36,11 +36,15 @@ Check previous to do list and notebook for other ideas and tasks
 fun idea, use margins and padding to create a diffuse effect
 Add a header in each seciton
 CSS
-    organize and try to make more concise
-    ids
-    screen versions
-    try to standardize measurements?
-    try to find a better way to make a phone vs laptop system
+    organize and try to make more concise - worked on Nov 23rd, made 25% more concise
+    ids ??
+    screen versions ?
+    try to standardize measurements - Greatly improved, large containers like page, content and nav bar use vw and vh in relation to screen size, while all subcontainers use percentages.
+    try to find a better way to make a phone vs laptop system - no
+    try to fix font sizing, make a box and then make text fit in that box
+    also fix the phone mode top margin
+    Why is there the extra space around stuff? like on the left in phone mode, for both the nav bar items, which have no margins, as well as the little purple bits?
+    look into scroll modifications
 
 section coding todos:
     Nav bar

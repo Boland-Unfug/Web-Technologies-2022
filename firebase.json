@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "Modular CV 2",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

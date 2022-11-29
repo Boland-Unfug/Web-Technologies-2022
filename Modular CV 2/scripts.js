@@ -142,7 +142,6 @@ function updateActive() {
             this.className += " current";
         });
     }
-
 }
 
 /*

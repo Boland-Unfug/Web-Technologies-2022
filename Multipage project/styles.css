@@ -49,7 +49,7 @@ a {
     height: 630vh;
 }
 
-.page {
+.box {
     display: flex;
     height:100vh;
     margin: 2.5% 5%;
@@ -86,12 +86,12 @@ a {
         margin-left: 20vw;
     }
 
-    .page {
+    .box {
         width: 90%;
         /* width of the content container, not whole page */
         flex-flow: row wrap;
     }
-    .page.current {
+    .box.current {
         background-color: red;
     }
 
@@ -161,7 +161,7 @@ a {
         margin-top: 20vh;
     }
 
-    .page {
+    .box {
         width: 90%;
         /* width of the content container, not whole page */
         flex-flow: column nowrap;
@@ -222,6 +222,55 @@ a {
         height:20%;
     }
 }
+
+@media only screen and (min-width: 801px) {
+
+    /* currently being set for mobile and pc, will add tablet later */
+    #navbar {
+        align-items: center;
+        width: 20vw;
+        height: 100vh;
+    }
+
+    .links {
+        
+    }
+
+    .link {
+        /* need to add changing font size, but for now these can be the same */
+        width: 15%;
+        font-size: 3vw;
+    }
+
+    .link:hover {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        align-items: center;
+
+    }
+
+    .links {
+        width: 100vw;
+        height: 20vh;
+
+    }
+
+    .link {
+        /* need to add changing font size, but for now these can be the same */
+        width: 15vw;
+        font-size: 3vw;
+    }
+
+    .link:hover {
+        font-size: 3vw;
+    }
+}
+
+
 
 /* Unique Contents styles  organize these */
 #menu {
@@ -311,53 +360,6 @@ a {
     opacity: 0.3;
 }
 
-
-@media only screen and (min-width: 801px) {
-
-    /* currently being set for mobile and pc, will add tablet later */
-    #navbar {
-        align-items: center;
-        width: 20vw;
-        height: 100vh;
-    }
-
-    .links {
-        
-    }
-
-    .link {
-        /* need to add changing font size, but for now these can be the same */
-        width: 15vw;
-        font-size: 3vw;
-    }
-
-    .link:hover {
-        font-size: 3vw;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    #navbar {
-        align-items: center;
-
-    }
-
-    .links {
-        width: 100vw;
-        height: 20vh;
-
-    }
-
-    .link {
-        /* need to add changing font size, but for now these can be the same */
-        width: 15vw;
-        font-size: 3vw;
-    }
-
-    .link:hover {
-        font-size: 3vw;
-    }
-}
 
 
 /* I will most likely need ID's for every link, in order for proper animations depending on page */
