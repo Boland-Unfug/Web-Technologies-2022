@@ -9,7 +9,7 @@
 
 <!DOCTYPE html>
 
-<html lang="en-us">fire
+<html lang="en-us">
 
 <head>
     <title>
@@ -24,12 +24,14 @@
 
 <body>
     <div class="links" id="navbar">
-        <a href="#menu" class="link current">Menu</a>
-        <a href="#description" class="link">Description</a>
-        <a href="#skills" class="link">Skills</a>
-        <a href="#projects" class="link">Projects</a>
-        <a href="#work" class="link">Work</a>
-        <a href="#education" class="link">Education</a>
+        <!-- will use these for the dropdown icon later <i class="fa-regular fa-bars"></i> -->
+        <!-- add a way to change regular to solid for selected section-->
+        <a href="#menu" class="link current"><i class="fa-solid fa-house"></i></a>
+        <a href="#description" class="link"><i class="fa-solid fa-user"></i></a>
+        <a href="#skills" class="link"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+        <a href="#projects" class="link"><i class="fa-solid fa-code"></i></a>
+        <a href="#work" class="link"><i class="fa-solid fa-helmet-safety"></i></a>
+        <a href="#education" class="link"><i class="fa-solid fa-graduation-cap"></i></a>
     </div>
     <div id="content">
         <div class="current page" id="menu">
@@ -87,57 +89,46 @@
                     experiences.
                     Boland has spent the last 5 years improving both his programming skills as well as life habits.
                 </div>
+                <div class="achievements">
+                    <i class="fa-solid fa-trophy"></i>
+                    2nd place in investing tournament
+                    1st place parking lot regatta
+                </div>
                 <!-- He can be found either studying at the library or lifting at the gym. -->
             </div>
         </div>
         <div class="page" id="projects">
-            <div class="item">
-                Here are my latest projects: work on this later
-                <a href="https://github.com/BolandUnfug"><i class="fa-brands fa-github"></i> </a>
+            <div class="item" id="projectquote">
+                "talk is cheap. Show me the code."
             </div>
-            <div class="item">
-                Here are my old projects:
-                <a href="https://github.com/Boland-Unfug"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <div class="item">
-                Current Project:
-                <a
-                    href="https://github.com/Boland-Unfug/Web-Technologies-2022/tree/Current-project-branch/Modular%20CV%202"><i
-                        class="fa-brands fa-github"></i> </a>
-            </div>
-            <div class="item">
-                Best Project
-                <a href="https://github.com/BolandUnfug/College-Projects/tree/master/Python%20Projects/Visualizations"><i
-                        class="fa-brands fa-github"></i> </a>
-            </div>
+            <div class="item" id="projectcontainer">
+                <div class="project">
+                    <a href="https://github.com/BolandUnfug"></i> 
+                        Current Projects</a>
 
+                </div>
+                <div class="project">
+                    <a
+                        href="https://github.com/BolandUnfug/College-Projects/tree/master/Python%20Projects/Visualizations">
+                            Best Project
+                        </a>
+                </div>
+            </div>
         </div>
         <div class="page" id="skills">
-            <div class="item" id="skillcharts">
-
+            <div class="item" id="skillchart">
                 <img src="images/hard skills.png" alt="hard skills">
-                <img src="images/soft skills.png" alt="soft skills">
             </div>
 
-            <!-- <div class="item" id="skilllists">
-                <div>
-                    Strengths:
-                    <ul>
-                        <li>Hard Worker</li>
-                        <li>Curious</li>
-                        <li>Fast Learner</li>
-                    </ul>
-                </div>
-
-                <div>
-                    Weaknesses:
-                    <ul>
-                        <li>Easily Distracted</li>
-                        <li>Prone to Boredom</li>
-                      </ul> 
-                </div>
-                
-            </div> -->
+            <div class="item" id="skillchart">
+                <img src="images/soft skills.png" alt="soft skills">
+            </div>
+            <div class="item" id="skilllist">
+                Best Languages: Python, Java
+                Known Languages: C++, HTML, CSS, JavaScript
+                Beginner Spanish
+            </div>
+            <!-- top languages, misc skills like language -->
 
         </div>
         <div class="experience page" id="work">
