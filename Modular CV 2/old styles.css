@@ -1,0 +1,363 @@
+/*
+Boland Unfug
+November 1st 2022
+Here will be the styles and hopefully animations for my CV.
+Structure
+I will have a basic class for all content, which will flexibly store individual elements
+then, I will have an ID for each element, in order to divide up each kind of content and use links
+Seperately I will have a nav bar that does not scroll
+The content box sizes will be static, but change depending on the screen size, hopefully 
+animate link clicking and scrolling
+There should be an indicator for topic
+I will need to make both width and height dynamic, I currently have dynamic widths
+*/
+
+
+/* Universal Content */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border: white;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+div {
+    /*to be used for font style*/
+    color: white;
+}
+
+img {
+    size: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Universal content styles and organization */
+#content {
+    background-color: rgb(80, 80, 80);
+    /* border: 1px solid white; */
+    height: 630vh;
+}
+
+.page {
+    display: flex;
+    height:100vh;
+    margin: 2.5% 5%;
+    /* border: 1px solid white; */
+    background-color: rgb(60, 60, 60);
+}
+
+.item {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: large;
+    /* border: 1px solid white; */
+    background-color: rgb(40, 40, 40);
+    margin: 2.5% 5%;
+}
+
+.date {
+    font-size: medium;
+}
+
+.title {
+    font-size: xx-large;
+}
+
+.description {
+    font-size: large;
+}
+
+@media only screen and (min-width: 801px) {
+
+    /* currently being set for mobile and pc, will add tablet later */
+    #content {
+        width: 80vw;
+        margin-left: 20vw;
+    }
+
+    .page {
+        width: 90%;
+        /* width of the content container, not whole page */
+        flex-flow: row wrap;
+    }
+    .page.current {
+        background-color: red;
+    }
+
+    .item {
+        /* figure out how to make the gap between each box the same as between box and border */
+        width: 40%;
+        height: 40%;
+    }
+
+    #description {
+        flex-direction:column;
+        flex-wrap:nowrap;
+    }
+
+    #profilepic {
+        height: 90%;
+        width: 50%;
+    }
+
+    #contactme {
+        height: 25%;
+        width: 40%;
+    }
+
+    #biodescription {
+        height: 55%;
+        width: 40%;
+    }
+
+    #contacticons {
+        flex-direction: column;
+        font-size: 7vh;
+        width:20%;
+        height:100%;
+    }
+
+    #basicinfo {
+        width:80%;
+        height:100%;
+    }
+
+    #skills {
+        flex-direction: row;
+    }
+
+    #skillcharts {
+        flex-direction:column;
+        width:55%;
+        height:90%;
+    }
+    
+    #skilllists {
+        flex-direction: column;
+        width:20%;
+        height:90%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* currently being set for mobile and pc, will add tablet later */
+    #content {
+        width: 100vw;
+        margin-top: 20vh;
+    }
+
+    .page {
+        width: 90%;
+        /* width of the content container, not whole page */
+        flex-flow: column nowrap;
+    }
+
+    .item {
+        /* figure out how to make the gap between each box the same as between box and border */
+        width: 90%;
+        height: 20%;
+    }
+
+    #description {
+        flex-direction:row;
+    }
+
+    #profilepic {
+        height: 50%;
+        width: 60%;
+    }
+
+    #contactme {
+        flex-flow: column wrap;
+        height: 50%;
+        width: 30%;
+    }
+
+    #biodescription {
+        height: 40%;
+        width: 100%;
+    }
+
+    #basicinfo {
+        width:100%;
+        height:60%;
+    }
+
+    #contacticons {
+        flex-flow: row wrap;
+        font-size: 7vw;
+        width:100%;
+        height:20%;
+    }
+
+    #skills {
+        flex-direction: column;
+        margin:2.5%;
+    }
+
+    #skillcharts {
+        flex-direction:column;
+        width:90%;
+        height:75%;
+    }
+    
+    #skilllists {
+        flex-direction: row;
+        width:90%;
+        height:20%;
+    }
+}
+
+/* Unique Contents styles  organize these */
+#menu {
+    font-size: 5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#helloworld {
+        font-size:5rem;
+}
+
+#description {
+    flex-wrap: wrap;
+}
+
+#profilepic {
+    margin:2.5%;
+}
+
+#biodescription {
+    margin:2.5%;
+}
+
+#contactme {
+    margin:2.5%;
+    flex-direction: row;
+}
+
+#contacticons {
+    text-align: center;
+    font-size: 7vh;
+}
+#basicinfo {
+    font-size:200%;
+}
+
+.experience {}
+
+#education {}
+
+#work {}
+
+#projects {
+
+}
+
+#skills {
+
+}
+
+.skillcharts {
+
+}
+
+.skilllists {
+    font-size: xx-large;
+}
+
+/* Navigation Bar styles and organization */
+
+
+#navbar {
+    /*improve item spacing */
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+    background-color: rgb(60, 60, 60);
+}
+
+.links {
+    position: fixed;
+}
+
+
+.link {
+    transition: opacity 400ms ease;
+    font-family: 'Ibarra Real Nova', serif;
+    
+}
+
+.link.current {
+    color:red;
+}
+
+.link:hover {
+    opacity: 0.3;
+}
+
+
+@media only screen and (min-width: 801px) {
+
+    /* currently being set for mobile and pc, will add tablet later */
+    #navbar {
+        align-items: center;
+        width: 20vw;
+        height: 100vh;
+    }
+
+    .links {
+        
+    }
+
+    .link {
+        /* need to add changing font size, but for now these can be the same */
+        width: 15vw;
+        font-size: 3vw;
+    }
+
+    .link:hover {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        align-items: center;
+
+    }
+
+    .links {
+        width: 100vw;
+        height: 20vh;
+
+    }
+
+    .link {
+        /* need to add changing font size, but for now these can be the same */
+        width: 15vw;
+        font-size: 3vw;
+    }
+
+    .link:hover {
+        font-size: 3vw;
+    }
+}
+
+
+/* I will most likely need ID's for every link, in order for proper animations depending on page */

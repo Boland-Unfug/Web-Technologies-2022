@@ -1,0 +1,146 @@
+/*
+Boland Unfug
+December 22nd 2022
+A css file for desktop specific stylings
+*/
+
+/*
+Style style
+comments
+organization (flex, wrap, etc)
+positioning and sizing
+borders padding and margins
+fonts
+colors
+animations
+*/
+
+@media only screen and (min-width: 801px) {
+
+    /* Nav Bar styling */
+    #navbar {
+        flex-flow: column wrap;
+        width: 5vw;
+        height: 100vh;
+    }
+
+    .link {
+        font-size: 200%;
+    }
+
+    .link.current {
+        font-size: 300%;
+    }
+
+    /* General Content styling */
+
+    #content {
+        width: 95vw;
+        margin-left: 5vw;
+    }
+
+    .item {
+        /* figure out how to make the gap between each box the same as between box and border */
+        width: 40%;
+        height: 40%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /*TODO*/
+    }
+
+
+    /* specific Content styling */
+
+    #menu {
+        align-items: center;
+        justify-content: center;
+        font-size: 500%;
+    }
+
+    #description {
+        flex-flow: column wrap;
+    }
+
+
+
+    #profilepic {
+        height: 90%;
+        width: 50%;
+    }
+
+    #contactme {
+        height: 25%;
+        width: 40%;
+        margin: 1%;
+        flex-flow: column wrap;
+    }
+
+    #contacticons {
+
+        width: 10%;
+        height: 100%;
+        text-align: center;
+        font-size: 200%;
+    }
+
+    #basicinfo {
+        width: 80%;
+        height: 100%;
+        font-size: 200%;
+    }
+
+    #biodescription {
+        height: 55%;
+        width: 40%;
+    }
+
+    #projects {
+        flex-flow: column nowrap;
+        background-size: cover;
+        background-image: url('../images/minimalist-code-wallpaper.png');
+    }
+
+    #projectquote {
+        background-color: transparent;
+        font-size: 400%;
+        text-align: center;
+        width: 90%;
+        height: 10%;
+    }
+
+    #projectcontainer {
+        flex-flow: column wrap;
+        align-items: flex-end;
+        background-color: transparent;
+        width: 90%;
+        height: 80%;
+    }
+
+    .project {
+        text-align: center;
+        font-size: 300%;
+        margin: 5%;
+        width: 40%;
+        height: 15%;
+    }
+
+    #skills {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #skillchart {
+        width: 45%;
+        height: 80%;
+    }
+
+    #skilllist {
+        width: 90%;
+        height: 30%;
+    }
+
+}

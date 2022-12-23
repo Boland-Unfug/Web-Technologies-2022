@@ -16,16 +16,19 @@
         Boland Unfug CV
     </title>
 
-    <link rel="stylesheet" href="styles copy.css">
+    <link rel="stylesheet" href="styles/master styles.css">
+    <link rel="stylesheet" href="styles/desktop styles.css">
+    <link rel="stylesheet" href="styles/mobile styles.css">
     <script src="https://kit.fontawesome.com/0881acb40f.js" crossorigin="anonymous"></script>
     <script defer src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div class="links" id="navbar">
         <!-- will use these for the dropdown icon later <i class="fa-regular fa-bars"></i> -->
-        <!-- add a way to change regular to solid for selected section-->
+        <!-- add a way to change regular to solid for selected section need premium lol-->
         <a href="#menu" class="link current"><i class="fa-solid fa-house"></i></a>
         <a href="#description" class="link"><i class="fa-solid fa-user"></i></a>
         <a href="#skills" class="link"><i class="fa-solid fa-screwdriver-wrench"></i></a>
@@ -34,7 +37,7 @@
         <a href="#education" class="link"><i class="fa-solid fa-graduation-cap"></i></a>
     </div>
     <div id="content">
-        <div class="current page" id="menu">
+        <div class="page" id="menu">
             Welcome.
         </div>
         <div class="page" id="description">
@@ -58,8 +61,6 @@
                 <div id="basicinfo">
                     Boland Unfug <br>
                     Programming Student <br>
-
-
                 </div>
 
             </div>
@@ -89,13 +90,29 @@
                     experiences.
                     Boland has spent the last 5 years improving both his programming skills as well as life habits.
                 </div>
-                <div class="achievements">
+                <!-- <div class="achievements">
                     <i class="fa-solid fa-trophy"></i>
                     2nd place in investing tournament
                     1st place parking lot regatta
-                </div>
+                </div> -->
                 <!-- He can be found either studying at the library or lifting at the gym. -->
             </div>
+        </div>
+        <div class="page" id="skills">
+            <div class="item" id="skillchart">
+                <img src="images/hard skills.png" alt="hard skills">
+            </div>
+
+            <div class="item" id="skillchart">
+                <img src="images/soft skills.png" alt="soft skills">
+            </div>
+            <!-- <div class="item" id="skilllist">
+                Best Languages: Python, Java
+                Known Languages: C++, HTML, CSS, JavaScript
+                Beginner Spanish
+            </div> -->
+            <!-- top languages, misc skills like language -->
+
         </div>
         <div class="page" id="projects">
             <div class="item" id="projectquote">
@@ -115,73 +132,78 @@
                 </div>
             </div>
         </div>
-        <div class="page" id="skills">
-            <div class="item" id="skillchart">
-                <img src="images/hard skills.png" alt="hard skills">
-            </div>
-
-            <div class="item" id="skillchart">
-                <img src="images/soft skills.png" alt="soft skills">
-            </div>
-            <div class="item" id="skilllist">
-                Best Languages: Python, Java
-                Known Languages: C++, HTML, CSS, JavaScript
-                Beginner Spanish
-            </div>
-            <!-- top languages, misc skills like language -->
-
-        </div>
         <div class="experience page" id="work">
             <div class="item">
                 <div class="date">Summer 2022 - Present</div>
                 <div class="title">Ouray Hotsprings Lifeguard</div>
-                <div class="description"> I experienced the job being a lifeguard lol</div>
-            </div>
-            <div class="item">
-                <div class="date">Summer 2020 - Winter 2020</div>
-                <div class="title"> Coding with Kids Teacher</div>
-                <div class="description">
-                    I taught kids to program minecraft mods using java. I mostly taught kids 5th and up, and each camp
-                    is
-                    1 week long, 3 hours per day.</div>
+                <div class="description"> 
+                    I had the opportunity to work at the local hotsprings, where I became lifeguard and cpr certified.
+                    I also gained valuable skills involving teamwork and communication, and an overall better understanding of work environments.
+                      </div>
             </div>
             <div class="item">
                 <div class="date">Summer 2018 - Summer 2019</div>
                 <div class="title">Minecraft Server CoHost</div>
                 <div class="description">
-                    Server Co-owner, Moderator, assistant developer and assistant builder for the Voxelverse Minecraft
-                    server.</div>
+                    My interest in minecraft led me to create a minecraft server from scratch with a friend of mine.
+                    I assisted with hosting, moderation, development, and building, which gave me a wide range of skills.
+                    This includes an understanding of online server management, online conflict moderation, and minecraft mod development.
+                </div> 
+            </div>
+            <div class="item">
+                <div class="date">Summer 2020 - Winter 2020</div>
+                <div class="title"> Coding with Kids Teacher</div>
+                <div class="description">
+                    Using my skills in mod development, I turned to teaching others how to code through fun minecraft modifications.
+                    I taught a wide variety of ages, from kindergarten to 8th grade. 
+                    Running a classroom improved my listening skills, patience, and my ability to communicate larger ideas.
+                    </div>
+                
             </div>
             <div class="item">
                 <div class="date">June 2017 - June 2018</div>
                 <div class="title"> Denver Public Library Volunteer</div>
                 <div class="description">
-                    I organized and ran weekly activities and helped oversee friday game night.</div>
+                    My first real job involved me planning and managing two events at my local library, Wednsday art club and Friday Game night.
+                    I was put in charge of the art club, planning out projects, organizing supplies, and entertaining participants.
+                    </div>
             </div>
         </div>
         <div class="experience page" id="education">
             <div class="item">
                 <div class="date">2020 - Present</div>
                 <div class="title">New College of Florida</div>
-                <div class="description">This is the current school I am attending. They focus on concepts, problem
-                    solving, and teamwork instead of memorization.</div>
-            </div>
-            <div class="item">
-                <div class="date">2022 - Present</div>
-                <div class="title">London South Bank University</div>
-                <div class="description">This is the current school I am attending. I wanted to get more worldly
-                    knowledge, expand my horizons, and learn in new ways, so I decided to take a semester abroad.</div>
+                <div class="description">
+                    This is my primary university, where I am working towards a degree in computer science.
+                    NCF being a liberal arts college provides me a unique perspective and flexible skill toolbox, while its status as an honors college maintains a level of difficulty.
+                </div>
             </div>
             <div class="item">
                 <div class="date">2018 - 2020</div>
                 <div class="title">Community College of Denver</div>
-                <div class="description">I took several College classes during my junior and senior year of high school.
+                <div class="description">
+                    CEC allowed me to participate directly in college classes. 
+                    This allowed me to take several core classes in high school, allowing me to focus on computer science later.
+                    - TODO
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">2022 - Present</div>
+                <div class="title">London South Bank University</div>
+                <div class="description">
+                    In order to broaden my horizons further, I decided to take a semester abroad.
+                    Studying in London provided many new challenges, both in school and out.
+                    It showed me new ways to live and learn, different cultures and beliefs, and taught me self - reliance.
                 </div>
             </div>
             <div class="item">
                 <div class="date">2017 - 2020</div>
                 <div class="title">CEC Early College</div>
-                <div class="description">I attended for 3 years, primarily taking video game design classes.</div>
+                <div class="description">
+                    In search for a better school, I changed high schools between 9th and 10th grade.
+                    CEC Early College provided a better, more fulfilling experience, while also allowing for early college enrollment.
+                    This is where I really started to program, taking a two year video game design course in c++ and python development.
+                </div>
             </div>
         </div>
 
